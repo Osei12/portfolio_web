@@ -802,6 +802,7 @@ footer .copyright{
         height: 40px;
         cursor: pointer;
         transition: 0.3s ease;
+        background-color:transparent ;
     }
     .menu-btn.active{
         z-index: 9999;
@@ -809,6 +810,7 @@ footer .copyright{
         background-size: 25px;
         background-position: center;
         transition: 0.3s ease;
+        background-color:transparent ;
     }
 
     .sections::before{
