@@ -33,7 +33,7 @@
 
 /* HEADER START */
 header{
-    z-index: 999; 
+    z-index: 9999; 
     position: fixed;
     top: 0;
     left: 0;
@@ -769,6 +769,7 @@ footer .copyright{
         align-items: center;
         background: rgba(1,1,1,0.5);
         transition: 0.5s ease;
+        z-index: 1000;
     }
 
     header .navigation .navigation-items a {
@@ -803,6 +804,7 @@ footer .copyright{
         cursor: pointer;
         transition: 0.3s ease;
         background-color:transparent ;
+        position:static;
     }
     .menu-btn.active{
         z-index: 9999;
@@ -811,7 +813,7 @@ footer .copyright{
         background-position: center;
         transition: 0.3s ease;
         background-color:transparent ;
-    }
+        position: static;
 
     .sections::before{
         position: absolute;
