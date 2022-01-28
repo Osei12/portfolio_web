@@ -33,7 +33,7 @@
 
 /* HEADER START */
 header{
-    z-index: 9999; 
+    z-index:10000; 
     position: fixed;
     top: 0;
     left: 0;
@@ -43,13 +43,16 @@ header{
     align-items: center;
     padding: 15px 150px;
     transition: 0.5s ease;
-}
-
-header.sticky{
     background-color: #090D55;
     transition: all 0.5s ease-in-out;
     box-shadow: inset 0 0 10px rgba(70, 33, 33, 0.25);
 }
+
+/* header.sticky{
+    background-color: #090D55;
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0 0 10px rgba(70, 33, 33, 0.25);
+} */
 
 header .brand{
     position: relative;
@@ -814,6 +817,7 @@ footer .copyright{
         transition: 0.3s ease;
         background-color:transparent ;
         position: static;
+    }
 
     .sections::before{
         position: absolute;
