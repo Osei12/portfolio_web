@@ -1,324 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage | Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" href="assets/media/images/20211217_080342_ccexpress.png" type="image/gif/png">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/Bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Porfolio</title>
 </head>
+
 <body>
-    <!------------ HEADER SECTION START  ---------------->
-    <header >
-        <a href="#" class="brand">
-            <div class="row">
-                <div class="col">
-                    <img src="assets/media/images/20211217_080342.png" alt="">
+    <div class="wrapper">
+        <div class="hero-img"></div>
+        <header>
+            <div>
+                <a href="index.html" class="logo">
+                    <img src="assets/media/images/20211217_080342_ccexpress.png" alt="website logo">
+                </a>
+            </div>
+            <nav>
+                <svg class="close" viewBox="0 0 43 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M21.5 2.75C26.4894 2.75 31.2744 4.77812 34.8024 8.38819C38.3305 11.9983 40.3125 16.8946 40.3125 22C40.3125 27.1054 38.3305 32.0017 34.8024 35.6118C31.2744 39.2219 26.4894 41.25 21.5 41.25C16.5106 41.25 11.7256 39.2219 8.19755 35.6118C4.66953 32.0017 2.6875 27.1054 2.6875 22C2.6875 16.8946 4.66953 11.9983 8.19755 8.38819C11.7256 4.77812 16.5106 2.75 21.5 2.75ZM21.5 19.6653L17.1301 15.1938C16.8276 14.8841 16.4172 14.7102 15.9893 14.7102C15.5614 14.7102 15.151 14.8841 14.8484 15.1938C14.5459 15.5034 14.3759 15.9233 14.3759 16.3611C14.3759 16.799 14.5459 17.2189 14.8484 17.5285L19.2183 22L14.8484 26.4715C14.6986 26.6248 14.5798 26.8068 14.4987 27.0071C14.4176 27.2074 14.3759 27.4221 14.3759 27.6389C14.3759 27.8557 14.4176 28.0704 14.4987 28.2707C14.5798 28.471 14.6986 28.6529 14.8484 28.8063C14.9983 28.9596 15.1761 29.0812 15.3719 29.1641C15.5676 29.2471 15.7774 29.2898 15.9893 29.2898C16.2012 29.2898 16.411 29.2471 16.6067 29.1641C16.8024 29.0812 16.9803 28.9596 17.1301 28.8063L21.5 24.3347L25.8699 28.8063C26.0197 28.9596 26.1976 29.0812 26.3933 29.1641C26.589 29.2471 26.7988 29.2898 27.0107 29.2898C27.2226 29.2898 27.4324 29.2471 27.6281 29.1641C27.8239 29.0812 28.0017 28.9596 28.1516 28.8063C28.3014 28.6529 28.4202 28.471 28.5013 28.2707C28.5824 28.0704 28.6241 27.8557 28.6241 27.6389C28.6241 27.4221 28.5824 27.2074 28.5013 27.0071C28.4202 26.8068 28.3014 26.6248 28.1516 26.4715L23.7817 22L28.1516 17.5285C28.3014 17.3752 28.4202 17.1932 28.5013 16.9929C28.5824 16.7926 28.6241 16.5779 28.6241 16.3611C28.6241 16.1443 28.5824 15.9296 28.5013 15.7293C28.4202 15.529 28.3014 15.3471 28.1516 15.1938C28.0017 15.0404 27.8239 14.9188 27.6281 14.8359C27.4324 14.7529 27.2226 14.7102 27.0107 14.7102C26.7988 14.7102 26.589 14.7529 26.3933 14.8359C26.1976 14.9188 26.0197 15.0404 25.8699 15.1938L21.5 19.6653Z"
+                        fill="#fff" />
+                </svg>
+
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <svg class="menu" viewBox="0 0 35 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M23.3333 21.3333H29.1666V26.6666H23.3333V21.3333ZM14.5833 21.3333H20.4166V26.6666H14.5833V21.3333ZM5.83325 21.3333H11.6666V26.6666H5.83325V21.3333ZM23.3333 13.3333H29.1666V18.6666H23.3333V13.3333ZM14.5833 13.3333H20.4166V18.6666H14.5833V13.3333ZM5.83325 13.3333H11.6666V18.6666H5.83325V13.3333ZM23.3333 5.33325H29.1666V10.6666H23.3333V5.33325ZM14.5833 5.33325H20.4166V10.6666H14.5833V5.33325ZM5.83325 5.33325H11.6666V10.6666H5.83325V5.33325Z"
+                    fill="#fff" />
+            </svg>
+
+        </header>
+
+        <section class="hero">
+            <div class="content">
+                <h1>Welcome!</h1>
+                <h2>My name is <span>Osei Kusi</span></h2>
+                <p>
+                    I'm a Developer & Graphics Designer.
+                    I develop mobile and desktop applications <br>and also creates attractive designs
+                </p>
+                <a href="#portfolio" class="hero-btn">Portfolio</a>
+            </div>
+
+            <div class="media-icons">
+                <a href="https://web.facebook.com/rhema.kusi.7/"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/alvin_kay1/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/osei-kusi-aa3b05221/"><i class="fab fa-linkedin-in "></i></a>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <div class="title">
+                <h2>Services</h2>
+            </div>
+            <div class="box">
+                <div class="card">
+                    <i class="fas fa-code"></i>
+                    <h5>Web Develpment</h5>
+                    <div class="pra">
+                        <p style="text-align: center;"></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa fa-mobile"></i>
+                    <h5>Mobile App Develpment</h5>
+                    <div class="pra">
+                        <p style="text-align: center;"></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fa fa-desktop"></i>
+                    <h5>Desktop App Develpment</h5>
+                    <div class="pra">
+                        <p style="text-align: center;"></p>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="fas fa-bars"></i>
+                    <h5>Graphics Design</h5>
+                    <div class="pra">
+                        <p style="text-align: center;"></p>
+                    </div>
+                </div>
+        </section>
+        <section class="portfolio" id="portfolio">
+            <div class="title">
+                <h2>Latest Projects</h2>
+            </div>
+            <div class="container">
+                <div class="latest-projects">
+                    <img src="assets/media/images/g1.jpg" alt="">
+                    <img src="assets/media/images/g2.jpg" alt="">
+                    <img src="assets/media/images/g3.jpg" alt="">
+                    <img src="assets/media/images/g4.jpg" alt="">
+                    <img src="assets/media/images/m7.png" class="img-fluid" alt="">
+                    <img src="assets/media/images/g6.jpg" alt="">
                 </div>
             </div>
-        </a>
-        <div class="menu-btn"></div>
-        <div class="navigation">
-            <div class="navigation-items">
-                <a href="#">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-            </div>
-        </div>
-    </header>
-    <!------------ HEADER SECTION END  ---------------->
+        </section>
 
-    <!------------ HOME SECTION START  ---------------->
-    <div class="main" >
-    <section class="home ">
-        <div class="content">
-            <h1>Welcome!</h1>
-            <h2>My name is <span>Osei Kusi</span></h2>
-            <p>
-                I'm a Developer & Graphics Designer.
-                I develop mobile and desktop applications <br>and also creates attractive designs
-            </p>
-            <a class="btn-home" href="#portfolio">Explore projects</a>
-        </div>
-        <div class="media-icons">
-            <a href="https://web.facebook.com/rhema.kusi.7/"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com/alvin_kay1/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/osei-kusi-aa3b05221/"><i class="fab fa-linkedin-in "></i></a>
-        </div>
-    </section>  
-     <!------------ HOME SECTION END  ---------------->
+    </div>
+    <footer id="contact">
+        <div class="row">
+            <div class="col">
+                <img src="assets/media/images/20211217_080342_ccexpress.png" alt="" class="logo">
 
-<div class="sections">
-    <div class="service" id="skills">
-        <h2>Skills</h2>
-        <div class="box">
-            <div class="card">
-                <i class="fas fa-code"></i>
-                <h5>Web Develpment</h5>
-                <div class="pra">    
-                    <p style="text-align: center;"></p>
-                </div>
+                <p>
+                    You can conatct us for all your high quality graphic designs. Highly functional, interactive and
+                    responsive websites, mobile and desktop application softwares </p>
+                <p>
+                    For more inquiries call or send mail.<br> Thank you
+                </p>
             </div>
-            <div class="card">
-                <i class="fa fa-mobile"></i>
-                <h5>Mobile App Development</h5>
-                <div class="pra">    
-                    <p style="text-align: center;"></p>
-                </div>
+            <div class="col">
+                <h3>Location <div class="underline"><span></span></div>
+                </h3>
+                <p>Onasis Road</p>
+                <p>Kumasi,Ghana</p>
+                <p>Asuoyeboah, AK-4388560</p>
+                <p class="email-id">alvinkay@gmail.com</p>
+                <h4>+233 - 544061819</h4>
             </div>
-            <div class="card">
-                <i class="fas fa-desktop"></i>
-                <h5>Desktop App Develpment</h5>
-                <div class="pra">    
-                    <p style="text-align: center;"></p>
-                </div>
+            <div class="col">
+                <h3>Links <div class="underline"><span></span></div>
+                </h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portflio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-            <div class="card">
-                <i class="fas fa-bars"></i>
-                <h5>Graphic Design</h5>
-                <div class="pra">
-                    <p style="text-align: center;"></p>
+            <div class="col">
+                <h3>Newletter<div class="underline"><span></span></div>
+                </h3>
+                <form>
+                    <i class="far fa-envelope"> </i>
+                    <input type="email" placeholder="Enter your email id" required>
+                    <button type="submit"><i class="fas fa-arrow-right"></i></button>
+                </form>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/rhema.kusi.7/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/alvin_kay1/"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/osei-kusi-aa3b05221/"><i class="fab fa-linkedin-in"></i></a>
                 </div>
             </div>
         </div>
-    </div>
-</div>
+        <hr>
+        <p class="copyright">
+            KayTek &copy; 2021 - All Rights Reserved
+        </p>
+    </footer>
 
 
-<!------------About Section Start---------->
-<div class="container-about" id="about">
-    <div class="title">
-        <h1>About Me</h1>
-    </div>
-    <div class="content-about">
-        <div class="article">
-            <p>
-                I am a full stack web developer. I can provide clean code and pixel perfect design.
-                 I also make the website more & more interactive with web animations.I can provide clean code and pixel perfect design. I also make the website more & more interactive with web animations.
-                A responsive design makes your website accessible to all users, regardless of their device.
-            </p>
-            <p>
-                I develop highly functional Desktop and mobile software applications such as POS systems, databases, institutional manaagement system and many more
-            </p>
-        </div>
-        <div class="image-section">
-            <img src="assets/media/images/about-me.jpg" alt="" >
-        </div>
-    </div>
-</div>
-<!------------About Section End---------->
-
-<!-- <div class="project" id="portfolio">
-    <input type="radio" name="photos" id="check1" checked>
-    <input type="radio" name="photos" id="check2">
-    <input type="radio" name="photos" id="check3">
-    <input type="radio" name="photos" id="check4">
-
-    <div class="container">
-        <h1>PORTFOLIO</h1>
-        <div class="top-content">
-            <h3>Projects</h3>
-            <label for="check1">All </label>
-            <label for="check2">Web Dev </label>
-            <label for="check3">Mobile & Desktop </label>
-            <label for="check4">Graphic Designs</label>
-        </div>
-    
-
-    <div class="photo-gallery">
-        <div class="pic place">
-            <img src="assets/media/images/Anticipation flyer KSA.jpg" >
-        </div>
-        <div class="pic family">
-            <img src="assets/media/images/w1.png" >
-        </div>
-        <div class="pic child">
-            <img src="assets/media/images/m4.png" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/flyer2.jpg" >
-        </div>
-        <div class="pic family">
-            <img src="assets/media/images/w2.png" >
-        </div>
-        <div class="pic child">
-            <img src="assets/media/images/m5.png" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/flyer3.jpg" >
-        </div>
-        <div class="pic family">
-            <img src="assets/media/images/w3.png" >
-        </div>
-        <div class="pic child">
-            <img src="assets/media/images/m6.png" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/Royal_Rangers.jpg" >
-        </div> 
-       <div class="pic family">
-            <img src="assets/media/images/w4.png" >
-        </div>
-        <div class="pic child">
-            <img src="assets/media/images/m7.png" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/g1.jpg" >
-        </div>
-
-        <div class="pic family">
-            <img src="assets/media/images/w5.png" >
-        </div>
-        <div class="pic family">
-            <img src="assets/media/images/w6.png" >
-        </div>
-        <div class="pic family">
-            <img src="assets/media/images/w7.png" >
-        </div>
-
-        <div class="pic family">
-            <img src="assets/media/images/w8.png" >
-        </div>
-        <div class="pic family">
-            <img src="assets/media/images/w9.png" >
-        </div>
-        <div class="pic family">
-            <img src="assets/media/images/w10.png" >
-        </div>
-        <div class="pic family">
-            <img src="assets/media/images/w11.png" >
-        </div>
-        <div class="pic family">
-            <img src="assets/media/images/w12.png" >
-        </div>
-        <div class="pic family">
-            <img src="assets/media/images/w13.png" >
-        </div>
-        <div class="pic family">
-            <img src="assets/media/images/w14.png" >
-        </div>
-
-        <div class="pic place">
-            <img src="assets/media/images/Business card back.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/Business card front.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/flyer1.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/flyer4.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/flyer5.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/flyer6.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/UPDATENEW.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/ticket-img.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/Vetting panelist KSAnew1.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/Vetting panelist KSAnew2.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/Vetting panelist KSAnew3.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/Vetting panelist KSAnew4.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/Vetting panelist KSAnew5.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/g7.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/g6.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/g5.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/g4.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/g3.jpg" >
-        </div>
-        <div class="pic place">
-            <img src="assets/media/images/g2.jpg" >
-        </div>
-
-
-        </div>
-    </div>
-</div> -->
-</div>
-</div>
-<!------------   FOOTER SECTION START  ------------------------>
-<footer id="contact">
-    <div class="row">
-        <div class="col">
-            <img src="assets/media/images/20211217_080342_ccexpress.png"  alt="" class="logo">
-
-            <p>
-                You can conatct us for all your high quality graphic designs. Highly functional, interactive and responsive websites, mobile and desktop application softwares  </p>
-            <p>
-                For more inquiries call or send mail.<br> Thank you
-            </p>
-        </div>
-        <div class="col">
-            <h3>Location <div class="underline"><span></span></div></h3>
-            <p>Onasis Road</p>
-            <p>Kumasi,Ghana</p>
-            <p>Asuoyeboah, AK-4388560</p>
-             <p class="email-id">alvinkay@gmail.com</p>
-             <h4>+233 - 544061819</h4>
-        </div>
-        <div class="col">
-            <h3>Links <div class="underline"><span></span></div></h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portflio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        <div class="col">
-            <h3>Newletter<div class="underline"><span></span></div></h3>
-            <form >
-                <i class="far fa-envelope" > </i>
-                <input type="email" placeholder="Enter your email id" required>
-                <button type="submit"><i class="fas fa-arrow-right" ></i></button>
-            </form>
-            <div class="social-icons">
-                <i class="fab fa-facebook-f" ></i>
-                <i class="fab fa-twitter" ></i>
-                <i class="fab fa-instagram" ></i>
-                <i class="fab fa-linkedin-in" ></i>
-            </div>
-        </div>
-    </div>
-    <hr>
-    <p class="copyright">
-        KayTek &copy; 2021 - All Rights Reserved
-    </p>
-</footer>
-<!------------   FOOTER SECTION END --------------------------->
     <script src="assets/js/main.js"></script>
-    <script src="assets/bootstrap/js/jquery.min.js"></script>
-    <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/Bootstrap/js/bootstrap.js"></script>
 </body>
+
 </html>
