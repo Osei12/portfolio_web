@@ -366,6 +366,98 @@ section.portfolio .container .latest-projects img:hover {
           box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.4);
 }
 
+.about-me {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.about-me h1 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 2em;
+  padding-top: 2em;
+}
+
+.about-me h1::after {
+  content: '';
+  height: 5px;
+  width: 160px;
+  background: #fff;
+  display: block;
+  margin: auto;
+  border-radius: 1em;
+}
+
+.about-me .wrapper-ab {
+  padding: 0em 5em;
+  margin: 5em auto;
+}
+
+.about-me .wrapper-ab .content {
+  width: 40%;
+  float: left;
+  text-align: left;
+  padding: 0em .5em;
+}
+
+.about-me .wrapper-ab .content h3 {
+  color: #fff;
+}
+
+.about-me .wrapper-ab .content p {
+  color: #fff;
+}
+
+.about-me .wrapper-ab .content .button {
+  margin-top: 2.5em;
+}
+
+.about-me .wrapper-ab .content .button a {
+  color: #fff;
+  padding: .6em 2.2em;
+  background: crimson;
+  border: 1px solid crimson;
+  letter-spacing: 1px;
+}
+
+.about-me .wrapper-ab .content .button a:hover {
+  background-color: #fff;
+  color: crimson;
+  font-weight: bold;
+}
+
+.about-me .wrapper-ab .content .social {
+  margin-top: 1.8em;
+  margin-left: .9em;
+}
+
+.about-me .wrapper-ab .content .social a {
+  color: #fff;
+  font-size: 1.8em;
+}
+
+.about-me .wrapper-ab .content .social i {
+  height: 1.6em;
+  width: 1.6em;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.about-me .wrapper-ab .image-section {
+  width: 50%;
+  float: right;
+  padding: 0em 1.6em;
+  border-radius: 1em;
+}
+
+.about-me .wrapper-ab .image-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 1em;
+}
+
 footer {
   width: 100%;
   position: relative;
@@ -543,7 +635,7 @@ footer .copyright {
 
 .to-top-btn {
   z-index: 9999;
-  background: #0514a3;
+  background: #060b3b;
   position: fixed;
   bottom: 16px;
   right: 15px;
@@ -701,6 +793,68 @@ footer .copyright {
   section.hero .content h2 span {
     color: crimson;
     font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 938px) {
+  .about-me {
+    width: 100%;
+    padding-top: 1em;
+  }
+  .about-me h1 {
+    font-size: 1.8em;
+    margin-top: 2em;
+    padding-top: 2em;
+  }
+  .about-me h1::after {
+    content: '';
+    height: 5px;
+    width: 150px;
+    background: #fff;
+    display: block;
+    margin: auto;
+    border-radius: 1em;
+  }
+  .about-me .wrapper-ab {
+    padding: 0em 1em;
+    margin: 5em auto;
+  }
+  .about-me .wrapper-ab .content {
+    width: 100%;
+    float: none;
+  }
+  .about-me .wrapper-ab .content .button {
+    margin-top: 2.5em;
+  }
+  .about-me .wrapper-ab .content .button a {
+    color: #fff;
+    padding: .3em 1.5em;
+    background: crimson;
+    border: 1px solid crimson;
+    letter-spacing: 1px;
+  }
+  .about-me .wrapper-ab .content .button a:hover {
+    background-color: #fff;
+    color: crimson;
+    font-weight: bold;
+  }
+  .about-me .wrapper-ab .content .social {
+    margin-top: 1.8em;
+    margin-left: .9em;
+  }
+  .about-me .wrapper-ab .content .social a {
+    color: #fff;
+    font-size: 1.5em;
+  }
+  .about-me .wrapper-ab .content .social i {
+    height: 1.6em;
+    width: 1.6em;
+    text-align: center;
+    border-radius: 50%;
+  }
+  .about-me .wrapper-ab .image-section {
+    width: 100%;
+    float: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
